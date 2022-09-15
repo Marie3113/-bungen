@@ -10,30 +10,24 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gebe einen Buchstaben ein");
-           string entry = Console.ReadLine();
-            List<string> list = new List<string>();
-            list.Add("Mona");
-            list.Add("Marie");
-            list.Add("Erwin");
-            list.Add("Philipp");
-            list.Add("Hannes");
-            list.Add("Leon");
-            list.Add("Jonas");
-            list.Add("Robert");
-            list.Add("Andreas");
-            list.Add("Robin");
-            list.Add("Marcello");
-            list.Add("Lukas");
-            for(int i = 0; i < list.Count; i++) 
+            Console.WriteLine("Wie viele Einträge möchtest du in deinem Array? ");
+           int entries_count = Convert.ToInt32(Console.ReadLine());
 
+            int[] entry_array = new int[entries_count];
+                for(int i = 0; i < entries_count; i++)
             {
-                if (list[i].Contains(entry));
-                Console.WriteLine(list[i]);
-            }
-                   
+                Console.WriteLine("Welche Zahl soll eingetragen werden");
+                entry_array[i] = Convert.ToInt32(Console.ReadLine());
 
-            
+            }
+            for (int i = 0; i < entry_array.Count(); i++)
+            {
+                Console.WriteLine(entry_array);
+            }
+
+
+
+
 
             Console.ReadLine(); 
         } 
