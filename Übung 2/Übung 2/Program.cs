@@ -10,12 +10,26 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gebe eine Zahl ein");
-            int entry = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Bitte gebe einen Buchstaben ein");
+           string entry = Console.ReadLine();
+            List<string> list = new List<string>();
+            list.Add("Mona");
+            list.Add("Marie");
+            list.Add("Erwin");
+            list.Add("Philipp");
+            list.Add("Hannes");
+            list.Add("Leon");
+            list.Add("Jonas");
+            list.Add("Robert");
+            list.Add("Andreas");
+            list.Add("Robin");
+            list.Add("Marcello");
+            list.Add("Lukas");
+            for(int i = 0; i < list.Count; i++) 
 
-            for (int i = entry; i >=0; i--)
             {
-                Console.WriteLine(i); 
+                if (list[i].Contains(entry));
+                Console.WriteLine(list[i]);
             }
                    
 
