@@ -12,9 +12,10 @@ namespace Übung_2
         {
             Console.WriteLine("Wie viele Einträge möchtest du in deinem Array? ");
            int entries_count = Convert.ToInt32(Console.ReadLine());
+           int[] entry_array = new int[entries_count];
 
-            int[] entry_array = new int[entries_count];
-                for(int i = 0; i < entries_count; i++)
+
+            for (int i = 0; i < entries_count; i++) 
             {
                 Console.WriteLine("Welche Zahl soll eingetragen werden");
                 entry_array[i] = Convert.ToInt32(Console.ReadLine());
@@ -22,9 +23,17 @@ namespace Übung_2
             }
             for (int i = 0; i < entry_array.Count(); i++)
             {
-                Console.WriteLine(entry_array);
+                Console.WriteLine(entry_array[i]);
             }
 
+            
+            int average = entry_array.Sum() / entries_count;
+            int entry_max = entry_array.Max();
+            int entry_min = entry_array.Min();
+
+            Console.WriteLine("Max: " + entry_max.ToString());
+            Console.WriteLine("Min: " + entry_min.ToString());
+            Console.WriteLine("Durchschnitt: " + average.ToString());
 
 
 
