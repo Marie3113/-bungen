@@ -10,16 +10,12 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte schreibe einen Text mit Leerzeichen am Anfang und Ende");
+            Console.WriteLine("Bitte schreibe einen Text mit mindestens 21 Zeichen");
 
             string entry = Console.ReadLine();
-            
-            
-            string trimmed_entry = entry.Trim();
-            Console.WriteLine("Vorher" + entry);
-            Console.WriteLine("Nachher" + trimmed_entry);
-
-            
+            string padded_entry = entry.PadLeft(20, 'y');
+            Console.WriteLine("Vorher + entry");
+            Console.WriteLine("Nachher" + padded_entry);
           
           
             Console.ReadLine(); 
