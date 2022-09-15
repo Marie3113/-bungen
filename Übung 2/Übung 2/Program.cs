@@ -10,14 +10,17 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte schreibe einen Text ein");
+            Console.WriteLine("Bitte gebe eine Zahl ein");
+            int entry = Convert.ToInt32(Console.ReadLine());
+            int j = 0;
+            for(int i = 0; i < entry; i++)
+            {
+                j = i + j;
+                Console.WriteLine(j);
+            }
+                   
 
-            string entry = Console.ReadLine();
-
-          string to_upper_case = entry.ToUpper();
-            string to_lower_case=entry.ToLower();
-            Console.WriteLine("Upper Cases: " + to_upper_case);
-            Console.WriteLine("Lower Cases: " + to_lower_case);
+            
 
             Console.ReadLine(); 
         } 
