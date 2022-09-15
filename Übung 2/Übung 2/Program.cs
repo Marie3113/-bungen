@@ -10,14 +10,19 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gib einen Text ein");
+            Console.WriteLine("Bitte gib eine Kommazahl ein");
 
-            string entry = Console.ReadLine();
+            double first_number = Convert.ToDouble(Console.ReadLine());
 
-            int count = entry.Length;
+            Console.WriteLine("Bitte gib eine andere Kommazahl ein");
+
+            double second_number = Convert.ToDouble(Console.ReadLine());
+
+
+            double sum = first_number + second_number;
  
             
-            Console.WriteLine("Die Länge deines Textes ist:" + count);
+            Console.WriteLine(sum);
           
             Console.ReadLine(); 
         } 
