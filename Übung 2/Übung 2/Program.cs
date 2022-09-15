@@ -10,13 +10,17 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte schreibe einen Text mit mindestens 21 Zeichen");
+            Console.WriteLine("Bitte schreibe einen Text mit ';' ein");
 
             string entry = Console.ReadLine();
-            int length = entry.Length + 30;
-            string padded_entry = entry.PadLeft(20, 'y');
-            Console.WriteLine("Vorher + entry");
-            Console.WriteLine("Nachher" + padded_entry);
+            string[] split_entry = entry.Split(';');
+            
+            Console.WriteLine("Vorher: ");
+
+            for (int i = 0; i < split_entry.Length; i++)
+            {
+                Console.WriteLine(split_entry[i]);
+            }
           
           
             Console.ReadLine(); 
