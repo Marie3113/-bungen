@@ -10,19 +10,17 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gib eine Kommazahl ein");
+            Console.WriteLine("Bitte schreibe einen Text mit Leerzeichen am Anfang und Ende");
 
-            double first_number = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("Bitte gib eine andere Kommazahl ein");
-
-            double second_number = Convert.ToDouble(Console.ReadLine());
-
-
-            double sum = first_number + second_number;
- 
+            string entry = Console.ReadLine();
             
-            Console.WriteLine(sum);
+            
+            string trimmed_entry = entry.Trim();
+            Console.WriteLine("Vorher" + entry);
+            Console.WriteLine("Nachher" + trimmed_entry);
+
+            
+          
           
             Console.ReadLine(); 
         } 
