@@ -14,11 +14,11 @@ namespace Übung_2
 
             string entry = Console.ReadLine();
 
-            string replace_entry = entry.Replace("U", "u").Replace("G", "g");
+            int count = entry.Length;
  
             
-            Console.WriteLine("Vorher: "  + entry);
-            Console.WriteLine("Nachher: " + replace_entry); 
+            Console.WriteLine("Die Länge deines Textes ist:" + count);
+          
             Console.ReadLine(); 
         } 
     }
