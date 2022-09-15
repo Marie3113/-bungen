@@ -10,18 +10,15 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gib eine Zahl ein");
+            Console.WriteLine("Bitte gib einen Text ein");
 
-            int first_number = Convert.ToInt32(Console.ReadLine());
+            string entry = Console.ReadLine();
 
-            Console.WriteLine("Bitte gib eine andere Zahl ein");
-
+            string replace_entry = entry.Replace("U", "u").Replace("G", "g");
+ 
             
-            int second_number = Convert.ToInt32(Console.ReadLine());  
-
-            int sum = first_number + second_number;
-
-            Console.WriteLine("Summe" + sum); 
+            Console.WriteLine("Vorher: "  + entry);
+            Console.WriteLine("Nachher: " + replace_entry); 
             Console.ReadLine(); 
         } 
     }
