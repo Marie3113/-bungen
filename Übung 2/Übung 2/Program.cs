@@ -13,7 +13,8 @@ namespace Übung_2
             List<string> names = new List<string>();
 
             for(int i = 0; i < 4; i++)    
-            { 
+            {
+                Console.WriteLine("Gib einen Namen ein");
                 names.Add(Console.ReadLine());
 
             }
