@@ -14,27 +14,19 @@ namespace Übung_2
         {
            
            Console.WriteLine("Wir holen uns jetzt eine Zahl aus Number()");
-           List<string> names= Number();
-           foreach (var name in names)
-           {
-               Console.WriteLine(name);
-           }
-           Console.ReadLine();
-            
+            int zahl1 = 5;
+            int zahl2 = 120;
 
-             
-            
+            int ergebnis = Add(zahl1, zahl2);
+            Console.WriteLine(ergebnis);
+            Console.ReadLine();
 
-
-           
             
         }
-        static List <string> Number()
+        static int Add(int z1, int z2)
         {
-            List<string> name = new List<string>();
-            name.Add("ABC");
-
-            return name;
+            int summe = z1 + z2;
+            return summe;
         }
     } 
    
