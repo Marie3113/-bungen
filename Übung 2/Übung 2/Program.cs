@@ -12,10 +12,12 @@ namespace Übung_2
 
         static void Main(string[] args)
         {
-           
-           Console.WriteLine("Wir holen uns jetzt eine Zahl aus Number()");
-            int zahl1 = 5;
-            int zahl2 = 120;
+
+            Console.WriteLine("Gebe mir eine Zahl");
+            int zahl1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Bitte gebe noch eine Zahl ein");
+            int zahl2 = Convert.ToInt32(Console.ReadLine());
 
             int ergebnis = Add(zahl1, zahl2);
             Console.WriteLine(ergebnis);
@@ -25,9 +27,11 @@ namespace Übung_2
         }
         static int Add(int z1, int z2)
         {
-            int summe = z1 + z2;
+            int summe = z1 * z2;
             return summe;
+            Console.WriteLine("Das Erbgenis von " + z1 + z2 + "=" + summe);
+
         }
-    } 
-   
+    }
+    
 } 
