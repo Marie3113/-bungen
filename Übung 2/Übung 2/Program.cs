@@ -10,20 +10,17 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int random_zahl = r.Next(0, 100);
-            int entry = 0;
+            //5 Werte speichern
+            int[] zahlen = new int[5];
 
-            do
+            //[26 / 8 / 12 / 3 / 6] zahlen2 -> 2er Reihen
+            int[] zahlen2 = new int[] { 26, 8, 12, 3, 6 };
+
+            Console.Write("[ ");
+            for(int i = 0; i< zahlen.Length; i++)
             {
-                entry = Convert.ToInt32(Console.ReadLine());
-                if (random_zahl < entry)
-                    Console.WriteLine("Eingegebene Zahl ist größer");
-                else if (random_zahl > entry)
-                    Console.WriteLine("Eingegebene Zahl ist kleiner");
-                
+               Console.Write($" {zahlen[i]}");   
             }
-            while (random_zahl != entry);
             Console.ReadLine();
         
         } 
