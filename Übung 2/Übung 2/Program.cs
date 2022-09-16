@@ -10,12 +10,24 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            string[] namen = new string[13];
-            string[] namen2 = new string[] { "Lukas", "Jonas", "Mona", "Marie", "Philipp", "Jan", "Erwin", "Leon", "Marcello", "Johannes", "Robin", "Andreas", "Robert" };
-            for (int i = 0; i < namen2.Length; i++)
+            Console.WriteLine("Bitte gebe einen Namen ein");
+            string name = Console.ReadLine();
+            int anzahl = 0;
+
+            if(name == "")
             {
-                namen2[i] = "Michael";
+                Console.WriteLine(" Hast du keinen Namen");
+                name= Console.ReadLine();   
             }
+
+            for(int i = 0; i < name.Length; i++)
+            {
+                anzahl = name.Count(c => c == 'a');
+
+            }
+          
+            Console.WriteLine("Anzahl 'a' im Namen" + anzahl);
+           
 
             Console.ReadLine();
         }
