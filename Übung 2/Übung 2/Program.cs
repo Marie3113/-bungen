@@ -10,25 +10,37 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bitte gebe einen Namen ein");
+            Console.WriteLine("Gebe bitte deinen Namen an");
             string name = Console.ReadLine();
-            int anzahl = 0;
 
             if(name == "")
             {
-                Console.WriteLine(" Hast du keinen Namen");
-                name= Console.ReadLine();   
+                Console.WriteLine("Hast du wirklich keinen Namen");
+                name = Console.ReadLine();
             }
 
+            int count = 0;
             for(int i = 0; i < name.Length; i++)
             {
-                anzahl = name.Count(c => c == 'a');
-
+                if (name[i].ToString() == "a")
+                { 
+                count++;
+                }
             }
-          
-            Console.WriteLine("Anzahl 'a' im Namen" + anzahl);
-           
 
+            Console.WriteLine("In deinem Namen sind " + count + " a ");
+
+            Console.WriteLine("Bitte gebe eine Zahl ein");
+            int number = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Bitte gebe noch eine Zahl ein");
+                int number2 = Convert.ToInt32(Console.ReadLine());  
+            if(number > number2)
+            {
+                Console.WriteLine("Nummer 1 ist größer");
+            }
+            else
+            { Console.WriteLine("Nummer 2 ist größer");
+            }
             Console.ReadLine();
         }
  
