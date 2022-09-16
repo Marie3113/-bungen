@@ -8,27 +8,34 @@ namespace Übung_2
 {
     internal class Program
     {
+        private static List<string> name;
+
         static void Main(string[] args)
-        { 
-            List<string> names = new List<string>();
+        {
+           
+           Console.WriteLine("Wir holen uns jetzt eine Zahl aus Number()");
+           List<string> names= Number();
+           foreach (var name in names)
+           {
+               Console.WriteLine(name);
+           }
+           Console.ReadLine();
+            
 
-            for(int i = 0; i < 4; i++)    
-            {
-                Console.WriteLine("Gib einen Namen ein");
-                names.Add(Console.ReadLine());
-
-            }
-
-            for(int i = 0; i < names.Count(); i++)
-            {
-                Console.WriteLine(names[i]);    
-            }
-
+             
+            
 
 
-            Console.ReadLine();
+           
+            
         }
- 
+        static List <string> Number()
+        {
+            List<string> name = new List<string>();
+            name.Add("ABC");
+
+            return name;
+        }
     } 
    
 } 
