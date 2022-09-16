@@ -10,37 +10,23 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Gebe bitte deinen Namen an");
-            string name = Console.ReadLine();
+            int zahl = Convert.ToInt16(Console.ReadLine());
 
-            if(name == "")
+            switch(zahl)
             {
-                Console.WriteLine("Hast du wirklich keinen Namen");
-                name = Console.ReadLine();
+                case 1:
+                    Console.WriteLine("Die Zahl ist 1");
+                        case 2:
+                    Console.WriteLine("Die Zahl ist 2");
+                case 5:
+                    Console.WriteLine("Die Zahl ist 5");
+                    break;
+                    default:
+                    Console.WriteLine("Kein Fall tritt ein");
+                    break;
+
             }
 
-            int count = 0;
-            for(int i = 0; i < name.Length; i++)
-            {
-                if (name[i].ToString() == "a")
-                { 
-                count++;
-                }
-            }
-
-            Console.WriteLine("In deinem Namen sind " + count + " a ");
-
-            Console.WriteLine("Bitte gebe eine Zahl ein");
-            int number = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Bitte gebe noch eine Zahl ein");
-                int number2 = Convert.ToInt32(Console.ReadLine());  
-            if(number > number2)
-            {
-                Console.WriteLine("Nummer 1 ist größer");
-            }
-            else
-            { Console.WriteLine("Nummer 2 ist größer");
-            }
             Console.ReadLine();
         }
  
