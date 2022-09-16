@@ -10,22 +10,43 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            int zahl = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("Bitte gebe eine Zahl ein");
+            double number = Convert.ToDouble(Console.ReadLine());
 
-            switch(zahl)
+            Console.WriteLine("Bitte gebe noch eine Zahl ein");
+            double number2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Was möchtest du mit den Zahlen machen?(+,-,*,/)");
+            string opperator = Console.ReadLine();
+
+            double result = 0;
+
+            switch(opperator)
             {
-                case 1:
-                    Console.WriteLine("Die Zahl ist 1");
-                        case 2:
-                    Console.WriteLine("Die Zahl ist 2");
-                case 5:
-                    Console.WriteLine("Die Zahl ist 5");
+                case "+":
+                    result = number + number2;
+                    break;  
+                    case "-":   
+                    result = number - number2;  
                     break;
-                    default:
-                    Console.WriteLine("Kein Fall tritt ein");
+                case "*":
+                    result = number * number2;
                     break;
+                case "/":
+                    result = number / number2;
+                    break;
+                    
 
             }
+
+            Console.WriteLine("Das Erbgenis von " + number + opperator + number2 + "=" + result);
+
+
+           
+            
+              
+
+            
 
             Console.ReadLine();
         }
