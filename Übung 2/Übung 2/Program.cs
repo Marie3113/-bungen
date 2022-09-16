@@ -10,19 +10,16 @@ namespace Übung_2
     {
         static void Main(string[] args)
         {
-            //5 Werte speichern
-            int[] zahlen = new int[5];
-
-            //[26 / 8 / 12 / 3 / 6] zahlen2 -> 2er Reihen
-            int[] zahlen2 = new int[] { 26, 8, 12, 3, 6 };
-
-            Console.Write("[ ");
-            for(int i = 0; i< zahlen.Length; i++)
+            string[] namen = new string[13];
+            string[] namen2 = new string[] { "Lukas", "Jonas", "Mona", "Marie", "Philipp", "Jan", "Erwin", "Leon", "Marcello", "Johannes", "Robin", "Andreas", "Robert" };
+            for (int i = 0; i < namen2.Length; i++)
             {
-               Console.Write($" {zahlen[i]}");   
+                namen2[i] = "Michael";
             }
+
             Console.ReadLine();
-        
-        } 
-    }
-}
+        }
+ 
+    } 
+   
+} 
