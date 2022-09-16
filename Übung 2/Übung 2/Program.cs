@@ -11,14 +11,17 @@ namespace Übung_2
         static void Main(string[] args)
         { 
             List<string> names = new List<string>();
-            names.Add("Christian");
-            names.Add("Mona");
 
+            for(int i = 0; i < 4; i++)    
+            { 
+                names.Add(Console.ReadLine());
 
+            }
 
-
-
-
+            for(int i = 0; i < names.Count(); i++)
+            {
+                Console.WriteLine(names[i]);    
+            }
 
 
 
